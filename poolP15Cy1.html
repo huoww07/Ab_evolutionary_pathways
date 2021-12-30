@@ -1,0 +1,2193 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.32.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="8" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">5,134</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="right">89.0%</td>
+<td align="center"><font class="snp_type_nonsynonymous">Q447H</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>gyrB</i>&nbsp;&rarr;</td>
+<td align="left">DNA gyrase subunit B</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_309.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">17,737</td><!-- Position -->
+<td align="center">(A)<sub>12&rarr;8</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+439/&#8209;477)</td>
+<td align="center"><i>tyrS</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_00015</i></td>
+<td align="left">Tyrosine&#8209;&#8209;tRNA ligase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_3.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">17,779:1</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+481/&#8209;438)</td>
+<td align="center"><i>tyrS</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_00015</i></td>
+<td align="left">Tyrosine&#8209;&#8209;tRNA ligase/16S ribosomal RNA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_4.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">23,562</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+15/&#8209;127)</td>
+<td align="center"><i>NDEONHPJ_00019</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>yfcG_1</i></td>
+<td align="left">5S ribosomal RNA/Disulfide&#8209;bond oxidoreductase YfcG</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">97,635</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">V179E</font>&nbsp;(G<font class="mutation_in_codon">T</font>A&rarr;G<font class="mutation_in_codon">A</font>A)&nbsp;</td>
+<td align="center"><i>glmS</i>&nbsp;&larr;</td>
+<td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">347,475</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="right">7.7%</td>
+<td align="center"><font class="snp_type_nonsense">S25*</font>&nbsp;(T<font class="mutation_in_codon">C</font>A&rarr;T<font class="mutation_in_codon">A</font>A)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_00329</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/JC_311.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">403,331:1</td><!-- Position -->
+<td align="center">+ACGGC</td><!-- Cell Mutation -->
+<td align="right">5.1%</td>
+<td align="center">coding&nbsp;(344/1101&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_00381</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">837,760</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+297/&#8209;163)</td>
+<td align="center"><i>nhaP</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_00804</i></td>
+<td align="left">Na(+)/H(+) antiporter NhaP/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_9.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,056,936:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;4/&#8209;181)</td>
+<td align="center"><i>NDEONHPJ_01001</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_01002</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_10.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,057,486</td><!-- Position -->
+<td align="center">(A)<sub>8&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(370/378&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_01002</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_11.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,057,543:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+49/&#8209;349)</td>
+<td align="center"><i>NDEONHPJ_01002</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>hscC</i></td>
+<td align="left">hypothetical protein/Chaperone protein HscC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_12.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,057,653</td><!-- Position -->
+<td align="center">(A)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+159/&#8209;239)</td>
+<td align="center"><i>NDEONHPJ_01002</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>hscC</i></td>
+<td align="left">hypothetical protein/Chaperone protein HscC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_13.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,057,702:1</td><!-- Position -->
+<td align="center">+A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+208/&#8209;190)</td>
+<td align="center"><i>NDEONHPJ_01002</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>hscC</i></td>
+<td align="left">hypothetical protein/Chaperone protein HscC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_14.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,059,672</td><!-- Position -->
+<td align="center">(T)<sub>9&rarr;8</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(849/870&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_01004</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_15.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,060,518:1</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(3/870&nbsp;nt)<br>coding&nbsp;(1088/1089&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_01004</i>&nbsp;&larr;<br><i>NDEONHPJ_01005</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein<br>hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,303,417</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="right">92.1%</td>
+<td align="center"><font class="snp_type_nonsense">C312*</font>&nbsp;(TG<font class="mutation_in_codon">T</font>&rarr;TG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>dmlR_5</i>&nbsp;&rarr;</td>
+<td align="left">HTH&#8209;type transcriptional regulator DmlR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_17.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,587,455:1</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;314/+297)</td>
+<td align="center"><i>NDEONHPJ_01482</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_01483</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_18.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,712,935</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;372/+237)</td>
+<td align="center"><i>NDEONHPJ_01623</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_01624</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_19.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,902,887:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+369/&#8209;324)</td>
+<td align="center"><i>mdlY</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_01808</i></td>
+<td align="left">Mandelamide hydrolase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_20.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,902,973:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+455/&#8209;238)</td>
+<td align="center"><i>mdlY</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_01808</i></td>
+<td align="left">Mandelamide hydrolase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_21.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,903,037:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+519/&#8209;174)</td>
+<td align="center"><i>mdlY</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_01808</i></td>
+<td align="left">Mandelamide hydrolase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_22.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,939,994</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+399/+362)</td>
+<td align="center"><i>NDEONHPJ_01843</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_01844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_23.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,940,255:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+660/+102)</td>
+<td align="center"><i>NDEONHPJ_01843</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_01844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_24.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,940,317</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+722/+40)</td>
+<td align="center"><i>NDEONHPJ_01843</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_01844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_25.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,940,640</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(1203/1224&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_01845</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_26.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">1,944,285</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;90/+408)</td>
+<td align="center"><i>NDEONHPJ_01848</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_01849</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_27.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,360,938</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">C159G</font>&nbsp;(<font class="mutation_in_codon">T</font>GT&rarr;<font class="mutation_in_codon">G</font>GT)&nbsp;</td>
+<td align="center"><i>yfcF</i>&nbsp;&rarr;</td>
+<td align="left">Glutathione S&#8209;transferase YfcF</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_28.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,362,537</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(407/450&nbsp;nt)</td>
+<td align="center"><i>pgrR_3</i>&nbsp;&larr;</td>
+<td align="left">HTH&#8209;type transcriptional regulator PgrR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_29.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,363,641:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(573/663&nbsp;nt)</td>
+<td align="center"><i>fabG_2</i>&nbsp;&rarr;</td>
+<td align="left">3&#8209;oxoacyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase FabG</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_30.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,363,846:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+115/&#8209;198)</td>
+<td align="center"><i>fabG_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>glpE_2</i></td>
+<td align="left">3&#8209;oxoacyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase FabG/Thiosulfate sulfurtransferase GlpE</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_31.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,363,980</td><!-- Position -->
+<td align="center">(T)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+249/&#8209;64)</td>
+<td align="center"><i>fabG_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>glpE_2</i></td>
+<td align="left">3&#8209;oxoacyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase FabG/Thiosulfate sulfurtransferase GlpE</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_32.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,364,337</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">F98L</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>glpE_2</i>&nbsp;&rarr;</td>
+<td align="left">Thiosulfate sulfurtransferase GlpE</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_33.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,364,674</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(66/828&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02280</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_34.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,365,423:1</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(815/828&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02280</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_35.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,367,290:1</td><!-- Position -->
+<td align="center">(C)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(630/663&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02282</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_36.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,367,802:1</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(477/531&nbsp;nt)</td>
+<td align="center"><i>sufS_1</i>&nbsp;&rarr;</td>
+<td align="left">Cysteine desulfurase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_37.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,368,052:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+196/&#8209;19)</td>
+<td align="center"><i>sufS_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>sufS_2</i></td>
+<td align="left">Cysteine desulfurase/Cysteine desulfurase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_38.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,368,633</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+14/+798)</td>
+<td align="center"><i>sufS_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02285</i></td>
+<td align="left">Cysteine desulfurase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_39.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,369,462</td><!-- Position -->
+<td align="center">(A)<sub>8&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(481&#8209;482/513&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02285</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_40.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,369,842</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(102/513&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02285</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_41.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,370,969:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;8</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+76/+169)</td>
+<td align="center"><i>dmlR_9</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>glnH_1</i></td>
+<td align="left">HTH&#8209;type transcriptional regulator DmlR/ABC transporter glutamine&#8209;binding protein GlnH</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_42.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,370,971</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+78/+167)</td>
+<td align="center"><i>dmlR_9</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>glnH_1</i></td>
+<td align="left">HTH&#8209;type transcriptional regulator DmlR/ABC transporter glutamine&#8209;binding protein GlnH</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_43.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,374,817</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;91/+495)</td>
+<td align="center"><i>glnM</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>yjdJ</i></td>
+<td align="left">putative glutamine ABC transporter permease protein GlnM/putative protein YjdJ</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_44.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,375,582:1</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;88/+157)</td>
+<td align="center"><i>yjdJ</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>rcsC_5</i></td>
+<td align="left">putative protein YjdJ/Sensor histidine kinase RcsC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_45.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,379,350:1</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(15/2670&nbsp;nt)<br>coding&nbsp;(473/480&nbsp;nt)</td>
+<td align="center"><i>rcsC_6</i>&nbsp;&larr;<br><i>NDEONHPJ_02295</i>&nbsp;&larr;</td>
+<td align="left">Sensor histidine kinase RcsC<br>hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_46.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,379,843:1</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(315/327&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02296</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_314.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,381,109</td><!-- Position -->
+<td align="center">(A)<sub>7&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(757&#8209;759/1620&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02297</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_48.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,381,112</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">K254E</font>&nbsp;(<font class="mutation_in_codon">A</font>AA&rarr;<font class="mutation_in_codon">G</font>AA)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_02297</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_299.html">MC</a>&nbsp;<a href="evidence/JC_315.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,381,993</td><!-- Position -->
+<td align="center">(A)<sub>11&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+21/+38)</td>
+<td align="center"><i>NDEONHPJ_02297</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>lrp_5</i></td>
+<td align="left">hypothetical protein/Leucine&#8209;responsive regulatory protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_50.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,383,019:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(373/384&nbsp;nt)<br>coding&nbsp;(50/288&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02299</i>&nbsp;&rarr;<br><i>NDEONHPJ_02300</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein<br>hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_51.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,386,677:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+25/&#8209;116)</td>
+<td align="center"><i>NDEONHPJ_02304</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>ydaD_1</i></td>
+<td align="left">hypothetical protein/General stress protein 39</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_52.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,387,408</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(616&#8209;617/642&nbsp;nt)</td>
+<td align="center"><i>ydaD_1</i>&nbsp;&rarr;</td>
+<td align="left">General stress protein 39</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_53.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,387,727</td><!-- Position -->
+<td align="center">(T)<sub>8&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+54/+104)</td>
+<td align="center"><i>ydaD_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>katE_1</i></td>
+<td align="left">General stress protein 39/Catalase HPII</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_54.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,387,846:1</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(825/840&nbsp;nt)</td>
+<td align="center"><i>katE_1</i>&nbsp;&larr;</td>
+<td align="left">Catalase HPII</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_300.html">MC</a>&nbsp;<a href="evidence/JC_316.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,388,219</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(450&#8209;452/840&nbsp;nt)</td>
+<td align="center"><i>katE_1</i>&nbsp;&larr;</td>
+<td align="left">Catalase HPII</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_56.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,388,222</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">Y150S</font>&nbsp;(T<font class="mutation_in_codon">A</font>T&rarr;T<font class="mutation_in_codon">C</font>T)&nbsp;</td>
+<td align="center"><i>katE_1</i>&nbsp;&larr;</td>
+<td align="left">Catalase HPII</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_57.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,388,848:1</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(1022/1029&nbsp;nt)</td>
+<td align="center"><i>katE_2</i>&nbsp;&larr;</td>
+<td align="left">Catalase HPII</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_58.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,391,118</td><!-- Position -->
+<td align="center">(T)<sub>9&rarr;8</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(15/1203&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02309</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_59.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,391,267:1</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;135/&#8209;388)</td>
+<td align="center"><i>NDEONHPJ_02309</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02310</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_60.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,391,837</td><!-- Position -->
+<td align="center">&Delta;2&nbsp;bp</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(183&#8209;184/225&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02310</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_61.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,391,957</td><!-- Position -->
+<td align="center">(A)<sub>8&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+78/&#8209;464)</td>
+<td align="center"><i>NDEONHPJ_02310</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02311</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_62.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,392,218:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+339/&#8209;204)</td>
+<td align="center"><i>NDEONHPJ_02310</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02311</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_63.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,392,668</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+25/&#8209;81)</td>
+<td align="center"><i>NDEONHPJ_02311</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02312</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_64.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,394,836:1</td><!-- Position -->
+<td align="center">+TT</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;536/&#8209;157)</td>
+<td align="center"><i>NDEONHPJ_02315</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02316</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_65.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,395,147</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+8/&#8209;121)</td>
+<td align="center"><i>NDEONHPJ_02316</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02317</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_66.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,398,669:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(157/207&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02321</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_67.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,398,969</td><!-- Position -->
+<td align="center">(T)<sub>8&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(179&#8209;180/192&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02322</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_68.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,399,328</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;180/+163)</td>
+<td align="center"><i>NDEONHPJ_02322</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>cmoA</i></td>
+<td align="left">hypothetical protein/tRNA (cmo5U34)&#8209;methyltransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_69.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,399,333</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;185/+158)</td>
+<td align="center"><i>NDEONHPJ_02322</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>cmoA</i></td>
+<td align="left">hypothetical protein/tRNA (cmo5U34)&#8209;methyltransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_70.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,399,502:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(559/570&nbsp;nt)</td>
+<td align="center"><i>cmoA</i>&nbsp;&larr;</td>
+<td align="left">tRNA (cmo5U34)&#8209;methyltransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_71.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,401,100:1</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(725/780&nbsp;nt)</td>
+<td align="center"><i>fadD_2</i>&nbsp;&larr;</td>
+<td align="left">Long&#8209;chain&#8209;fatty&#8209;acid&#8209;&#8209;CoA ligase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_72.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,408,367</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(60/99&nbsp;nt)<br>coding&nbsp;(8/852&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02331</i>&nbsp;&rarr;<br><i>liuE</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein<br>3&#8209;hydroxy&#8209;3&#8209;isohexenylglutaryl&#8209;CoA/hydroxy&#8209; methylglutaryl&#8209;CoA lyase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_73.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,409,735:1</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(667/705&nbsp;nt)</td>
+<td align="center"><i>dmlR_11</i>&nbsp;&larr;</td>
+<td align="left">HTH&#8209;type transcriptional regulator DmlR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_74.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,410,566</td><!-- Position -->
+<td align="center">(A)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;165/&#8209;41)</td>
+<td align="center"><i>dmlR_11</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02335</i></td>
+<td align="left">HTH&#8209;type transcriptional regulator DmlR/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_75.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,416,330</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+192/+38)</td>
+<td align="center"><i>NDEONHPJ_02337</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>phnX</i></td>
+<td align="left">hypothetical protein/Phosphonoacetaldehyde hydrolase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_76.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,417,435:1</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(844/900&nbsp;nt)</td>
+<td align="center"><i>phnW</i>&nbsp;&larr;</td>
+<td align="left">2&#8209;aminoethylphosphonate&#8209;&#8209;pyruvate transaminase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_77.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,418,269</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(10/900&nbsp;nt)</td>
+<td align="center"><i>phnW</i>&nbsp;&larr;</td>
+<td align="left">2&#8209;aminoethylphosphonate&#8209;&#8209;pyruvate transaminase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_78.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,418,528:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(1061/1080&nbsp;nt)</td>
+<td align="center"><i>soxA</i>&nbsp;&larr;</td>
+<td align="left">Monomeric sarcosine oxidase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_79.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,419,978</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(1423/1575&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02341</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_80.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,421,832</td><!-- Position -->
+<td align="center">(TG)<sub>3&rarr;2</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(562&#8209;563/621&nbsp;nt)</td>
+<td align="center"><i>cysA_3</i>&nbsp;&larr;</td>
+<td align="left">Sulfate/thiosulfate import ATP&#8209;binding protein CysA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_81.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,422,458:1</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(140/183&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02344</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_82.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,422,694:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(962/963&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02345</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_83.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,422,717:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(939/963&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02345</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_84.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,424,607:1</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;139/&#8209;1108)</td>
+<td align="center"><i>phnR</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>argR</i></td>
+<td align="left">Putative transcriptional regulator of 2&#8209;aminoethylphosphonate degradation operons/Lysine/arginine racemase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_85.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,425,012</td><!-- Position -->
+<td align="center">(A)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;544/&#8209;703)</td>
+<td align="center"><i>phnR</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>argR</i></td>
+<td align="left">Putative transcriptional regulator of 2&#8209;aminoethylphosphonate degradation operons/Lysine/arginine racemase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_86.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,427,047</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+40/+113)</td>
+<td align="center"><i>argR</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>pobA</i></td>
+<td align="left">Lysine/arginine racemase/p&#8209;hydroxybenzoate hydroxylase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_301.html">MC</a>&nbsp;<a href="evidence/JC_317.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,427,121</td><!-- Position -->
+<td align="center">(A)<sub>10&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+114/+37)</td>
+<td align="center"><i>argR</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>pobA</i></td>
+<td align="left">Lysine/arginine racemase/p&#8209;hydroxybenzoate hydroxylase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_88.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,428,831:1</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(316/318&nbsp;nt)</td>
+<td align="center"><i>pobR_1</i>&nbsp;&rarr;</td>
+<td align="left">p&#8209;hydroxybenzoate hydroxylase transcriptional activator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_89.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,428,867</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+34/&#8209;176)</td>
+<td align="center"><i>pobR_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>pobR_2</i></td>
+<td align="left">p&#8209;hydroxybenzoate hydroxylase transcriptional activator/p&#8209;hydroxybenzoate hydroxylase transcriptional activator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_90.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,429,053:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(11/288&nbsp;nt)</td>
+<td align="center"><i>pobR_2</i>&nbsp;&rarr;</td>
+<td align="left">p&#8209;hydroxybenzoate hydroxylase transcriptional activator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_91.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,429,563:1</td><!-- Position -->
+<td align="center">(C)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(419/480&nbsp;nt)</td>
+<td align="center"><i>azoR</i>&nbsp;&larr;</td>
+<td align="left">FMN&#8209;dependent NADH&#8209;azoreductase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_92.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,431,210</td><!-- Position -->
+<td align="center">(T)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(253/297&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02353</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_93.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,431,502</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;3</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(262&#8209;263/303&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02354</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_94.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,432,327</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;47/+361)</td>
+<td align="center"><i>srpA</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02356</i></td>
+<td align="left">Catalase&#8209;related peroxidase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_95.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,432,329</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;49/+360)</td>
+<td align="center"><i>srpA</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02356</i></td>
+<td align="left">Catalase&#8209;related peroxidase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_96.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,432,405:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;125/+284)</td>
+<td align="center"><i>srpA</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02356</i></td>
+<td align="left">Catalase&#8209;related peroxidase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_97.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,432,707:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(135/153&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02356</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_98.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,433,735:1</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;149/+52)</td>
+<td align="center"><i>NDEONHPJ_02357</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02358</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_99.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,434,649:1</td><!-- Position -->
+<td align="center">+A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;260/&#8209;821)</td>
+<td align="center"><i>NDEONHPJ_02358</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_02359</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_318.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,435,920</td><!-- Position -->
+<td align="center">(T)<sub>12&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(451&#8209;455/483&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02359</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_101.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,464,457</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(220/222&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02387</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_102.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,465,193</td><!-- Position -->
+<td align="center">(T)<sub>9&rarr;8</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+46/+13)</td>
+<td align="center"><i>NDEONHPJ_02388</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02389</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_103.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,465,696:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(445/477&nbsp;nt)</td>
+<td align="center"><i>dapA_2</i>&nbsp;&larr;</td>
+<td align="left">4&#8209;hydroxy&#8209;tetrahydrodipicolinate synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_104.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,466,313</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;173/+390)</td>
+<td align="center"><i>dapA_2</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02391</i></td>
+<td align="left">4&#8209;hydroxy&#8209;tetrahydrodipicolinate synthase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_105.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,466,454:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;314/+250)</td>
+<td align="center"><i>dapA_2</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02391</i></td>
+<td align="left">4&#8209;hydroxy&#8209;tetrahydrodipicolinate synthase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_106.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,466,673</td><!-- Position -->
+<td align="center">(A)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;533/+31)</td>
+<td align="center"><i>dapA_2</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02391</i></td>
+<td align="left">4&#8209;hydroxy&#8209;tetrahydrodipicolinate synthase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_319.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,466,944</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;142/+87)</td>
+<td align="center"><i>NDEONHPJ_02391</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02392</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_108.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,466,946:1</td><!-- Position -->
+<td align="center">(A)<sub>9&rarr;10</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;144/+87)</td>
+<td align="center"><i>NDEONHPJ_02391</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02392</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_109.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,467,034</td><!-- Position -->
+<td align="center">1&nbsp;bp&rarr;AG</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(404/405&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02392</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_320.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,468,751</td><!-- Position -->
+<td align="center">(T)<sub>9&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;700/&#8209;293)</td>
+<td align="center"><i>soxR</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>queH</i></td>
+<td align="left">Redox&#8209;sensitive transcriptional activator SoxR/Epoxyqueuosine reductase QueH</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_111.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,511,266</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;90/+10)</td>
+<td align="center"><i>NDEONHPJ_02429</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>NDEONHPJ_02430</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_112.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">2,511,331:1</td><!-- Position -->
+<td align="center">(T)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(1844/1899&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_02430</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_113.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,110,789</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">T524A</font>&nbsp;(<font class="mutation_in_codon">A</font>CT&rarr;<font class="mutation_in_codon">G</font>CT)&nbsp;</td>
+<td align="center"><i>nuoM</i>&nbsp;&larr;</td>
+<td align="left">NADH&#8209;quinone oxidoreductase subunit M</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_114.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,287</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="right">15.4%</td>
+<td align="center"><font class="snp_type_nonsynonymous">T2014K</font>&nbsp;(A<font class="mutation_in_codon">C</font>G&rarr;A<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_115.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,295</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">14.9%</td>
+<td align="center"><font class="snp_type_synonymous">G2011G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_116.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,301</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="right">14.5%</td>
+<td align="center"><font class="snp_type_synonymous">G2009G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_117.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,304</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">14.5%</td>
+<td align="center"><font class="snp_type_synonymous">G2008G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_118.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,334</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">14.7%</td>
+<td align="center"><font class="snp_type_synonymous">N1998N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_119.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,340</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="right">14.1%</td>
+<td align="center"><font class="snp_type_nonsynonymous">I1996M</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">G</font>)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_120.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,341</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">14.2%</td>
+<td align="center"><font class="snp_type_nonsynonymous">I1996T</font>&nbsp;(A<font class="mutation_in_codon">T</font>C&rarr;A<font class="mutation_in_codon">C</font>C)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_121.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,343</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">14.2%</td>
+<td align="center"><font class="snp_type_synonymous">D1995D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_122.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,352</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="right">12.9%</td>
+<td align="center"><font class="snp_type_synonymous">A1992A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_123.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,353</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="right">13.3%</td>
+<td align="center"><font class="snp_type_nonsynonymous">A1992D</font>&nbsp;(G<font class="mutation_in_codon">C</font>T&rarr;G<font class="mutation_in_codon">A</font>T)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_124.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,139,364</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="right">9.2%</td>
+<td align="center"><font class="snp_type_synonymous">L1988L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_125.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,501</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">N1276T</font>&nbsp;(A<font class="mutation_in_codon">A</font>T&rarr;A<font class="mutation_in_codon">C</font>T)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_126.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,503</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">L1275L</font>&nbsp;(TT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_127.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,505</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">L1275L</font>&nbsp;(<font class="mutation_in_codon">T</font>TG&rarr;<font class="mutation_in_codon">C</font>TA)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_128.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,507</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">T1274K</font>&nbsp;(A<font class="mutation_in_codon">C</font>G&rarr;A<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_129.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,515</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">G1271G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_130.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,518</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">A1270A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_131.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,524</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">G1268G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_132.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,141,554</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">N1258N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_133.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,143,274</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="right">21.6%</td>
+<td align="center"><font class="snp_type_nonsynonymous">N685T</font>&nbsp;(A<font class="mutation_in_codon">A</font>T&rarr;A<font class="mutation_in_codon">C</font>T)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_134.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,143,276</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="right">21.6%</td>
+<td align="center"><font class="snp_type_synonymous">L684L</font>&nbsp;(TT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_135.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,143,278</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="right">21.2%</td>
+<td align="center"><font class="snp_type_synonymous">L684L</font>&nbsp;(<font class="mutation_in_codon">T</font>TG&rarr;<font class="mutation_in_codon">C</font>TG)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_136.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,143,288</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">15.5%</td>
+<td align="center"><font class="snp_type_synonymous">G680G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_137.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,143,292</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="right">6.2%</td>
+<td align="center"><font class="snp_type_nonsynonymous">W679S</font>&nbsp;(T<font class="mutation_in_codon">G</font>G&rarr;T<font class="mutation_in_codon">C</font>G)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="polymorphism_table_row">
+<td align="center"><a href="evidence/SNP_138.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,143,293</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="right">5.5%</td>
+<td align="center"><font class="snp_type_nonsynonymous">W679G</font>&nbsp;(<font class="mutation_in_codon">T</font>GG&rarr;<font class="mutation_in_codon">G</font>GG)&nbsp;&Dagger;</td>
+<td align="center"><i>NDEONHPJ_03022</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_321.html">JC</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,443,757</td><!-- Position -->
+<td align="center">(T)<sub>10&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(&#8209;484/&#8209;254)</td>
+<td align="center"><i>NDEONHPJ_03302</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>hcaR_2</i></td>
+<td align="left">hypothetical protein/Hca operon transcriptional activator HcaR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_140.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,473,967</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">H55L</font>&nbsp;(C<font class="mutation_in_codon">A</font>T&rarr;C<font class="mutation_in_codon">T</font>T)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03333</i>&nbsp;&rarr;</td>
+<td align="left">Electron transfer flavoprotein&#8209;ubiquinone oxidoreductase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_141.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,683,375</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_nonsynonymous">Y145N</font>&nbsp;(<font class="mutation_in_codon">T</font>AT&rarr;<font class="mutation_in_codon">A</font>AT)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03523</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_142.html">RA</a></td><!-- Evidence -->
+<td align="center">1</td><!-- Seq_Id -->
+<td align="right">3,821,139</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center"><font class="snp_type_synonymous">S64S</font>&nbsp;(TC<font class="mutation_in_codon">C</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NDEONHPJ_03649</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_143.html">RA</a></td><!-- Evidence -->
+<td align="center">2</td><!-- Seq_Id -->
+<td align="right">73,781:1</td><!-- Position -->
+<td align="center">(A)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">coding&nbsp;(214/228&nbsp;nt)</td>
+<td align="center"><i>NDEONHPJ_03803</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_144.html">RA</a></td><!-- Evidence -->
+<td align="center">2</td><!-- Seq_Id -->
+<td align="right">73,801</td><!-- Position -->
+<td align="center">(A)<sub>7&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="right">100%</td>
+<td align="center">intergenic&nbsp;(+6/&#8209;31)</td>
+<td align="center"><i>NDEONHPJ_03803</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NDEONHPJ_03804</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_297.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_297.html">*</a></td>
+<td><a href="evidence/MC_PLOT_297.html">&divide;</a></td>
+<td>1</td>
+<td align="right">237623</td>
+<td align="right">237899</td>
+<td align="right">277</td>
+<td align="center">131&nbsp;[129]</td>
+<td align="center">[126]&nbsp;130</td>
+<td align="center"><i>NDEONHPJ_00213/NDEONHPJ_00214</i></td>
+<td align="left">hypothetical protein/tRNA&#8209;Thr</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_298.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_298.html">*</a></td>
+<td><a href="evidence/MC_PLOT_298.html">&divide;</a></td>
+<td>1</td>
+<td align="right">1944712&#8211;1947328</td>
+<td align="right">1947407&#8211;1947331</td>
+<td align="right">4&#8211;2696</td>
+<td align="center">131&nbsp;[128]</td>
+<td align="center">[125]&nbsp;130</td>
+<td align="center"><i>[NDEONHPJ_01849]&#8211;NDEONHPJ_01852</i></td>
+<td align="left">[NDEONHPJ_01849], NDEONHPJ_01850, NDEONHPJ_01851, NDEONHPJ_01852</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_302.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_302.html">*</a></td>
+<td><a href="evidence/MC_PLOT_302.html">&divide;</a></td>
+<td>1</td>
+<td align="right">2435439</td>
+<td align="right">2436957</td>
+<td align="right">1519</td>
+<td align="center">131&nbsp;[128]</td>
+<td align="center">[127]&nbsp;131</td>
+<td align="center"><i>NDEONHPJ_02359&#8211;[NDEONHPJ_02361]</i></td>
+<td align="left">NDEONHPJ_02359, NDEONHPJ_02360, [NDEONHPJ_02361]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_303.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_303.html">*</a></td>
+<td><a href="evidence/MC_PLOT_303.html">&divide;</a></td>
+<td>1</td>
+<td align="right">2468140</td>
+<td align="right">2469027</td>
+<td align="right">888</td>
+<td align="center">131&nbsp;[128]</td>
+<td align="center">[129]&nbsp;130</td>
+<td align="center"><i>soxR/queH</i></td>
+<td align="left">Redox&#8209;sensitive transcriptional activator SoxR/Epoxyqueuosine reductase QueH</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_304.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_304.html">*</a></td>
+<td><a href="evidence/MC_PLOT_304.html">&divide;</a></td>
+<td>1</td>
+<td align="right">3443467</td>
+<td align="right">3443994</td>
+<td align="right">528</td>
+<td align="center">132&nbsp;[129]</td>
+<td align="center">[128]&nbsp;131</td>
+<td align="center"><i>NDEONHPJ_03302/hcaR_2</i></td>
+<td align="left">hypothetical protein/Hca operon transcriptional activator HcaR</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_305.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_305.html">*</a></td>
+<td><a href="evidence/MC_PLOT_305.html">&divide;</a></td>
+<td>2</td>
+<td align="right">53532</td>
+<td align="right">53955</td>
+<td align="right">424</td>
+<td align="center">92&nbsp;[88]</td>
+<td align="center">[91]&nbsp;96</td>
+<td align="center"><i>NDEONHPJ_03790</i></td>
+<td align="left">NDEONHPJ_03790</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_312.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_312.html">?</a></td>
+<td rowspan="1" class="junction_gene">1</td>
+<td align="center" class="junction_gene">1303424&nbsp;=</td><td align="center" class="junction_gene">227 (0.850)</td><td rowspan="2" align="center">17 (0.060)</td>
+<td rowspan="2" align="center">16/170</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">6.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(943/1032&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>dmlR_5</i></td>
+<td class="junction_gene">HTH&#8209;type transcriptional regulator DmlR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_312.html">?</a></td><td rowspan="1" class="junction_gene">2</td>
+<td align="center" class="junction_gene">=&nbsp;14474</td>
+<td align="center" class="junction_gene">280 (1.090)</td><td align="center" class="junction_gene">intergenic&nbsp;(+18/+229)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03747/NDEONHPJ_03748</i></td>
+<td class="junction_gene">IS4 family transposase ISAba1/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_313.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_313.html">?</a></td>
+<td rowspan="1" class="junction_gene">1</td>
+<td align="center" class="junction_gene">=&nbsp;1303432</td><td align="center" class="junction_gene">221 (0.830)</td><td rowspan="2" align="center">18 (0.070)</td>
+<td rowspan="2" align="center">16/166</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">6.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(951/1032&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>dmlR_5</i></td>
+<td class="junction_gene">HTH&#8209;type transcriptional regulator DmlR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_313.html">?</a></td><td rowspan="1" class="junction_gene">2</td>
+<td align="center" class="junction_gene">13295&nbsp;=</td>
+<td align="center" class="junction_gene">291 (1.160)</td><td align="center" class="junction_gene">coding&nbsp;(30/867&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>folP_2</i></td>
+<td class="junction_gene">Dihydropteroate synthase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_324.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_324.html">?</a></td>
+<td rowspan="1" class="junction_gene">2</td>
+<td align="center" class="junction_gene">48892&nbsp;=</td><td align="center" class="junction_gene">306 (1.190)</td><td rowspan="2" align="center">89 (0.070)</td>
+<td rowspan="2" align="center">65/170</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">8.0%</td>
+<td align="center" class="junction_gene">coding&nbsp;(135/192&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03784</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_324.html">?</a></td><td rowspan="1" class="junction_gene">4</td>
+<td align="center" class="junction_gene">7613&nbsp;=</td>
+<td align="center" class="junction_gene">1732 (0.730)</td><td align="center" class="junction_gene">coding&nbsp;(1417/2412&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03912</i></td>
+<td class="junction_gene">putative TonB&#8209;dependent receptor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_325.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_325.html">?</a></td>
+<td rowspan="1" class="junction_gene">2</td>
+<td align="center" class="junction_gene">=&nbsp;49930</td><td align="center" class="junction_gene">259 (1.000)</td><td rowspan="2" align="center">180 (0.140)</td>
+<td rowspan="2" align="center">100/170</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">15.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+52/&#8209;2)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03785/NDEONHPJ_03786</i></td>
+<td class="junction_gene">IS5 family transposase ISAba12/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_325.html">?</a></td><td rowspan="1" class="junction_gene">4</td>
+<td align="center" class="junction_gene">=&nbsp;7621</td>
+<td align="center" class="junction_gene">1697 (0.720)</td><td align="center" class="junction_gene">coding&nbsp;(1425/2412&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03912</i></td>
+<td class="junction_gene">putative TonB&#8209;dependent receptor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_328.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_328.html">?</a></td>
+<td rowspan="1" class="junction_gene">3</td>
+<td align="center" class="junction_gene">13347&nbsp;=</td><td align="center" class="junction_gene">227 (0.180)</td><td rowspan="2" align="center">45 (0.030)</td>
+<td rowspan="2" align="center">23/138</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">6.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+825/&#8211;)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03901/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_328.html">?</a></td><td rowspan="1" class="junction_gene">4</td>
+<td align="center" class="junction_gene">=&nbsp;5242</td>
+<td align="center" class="junction_gene">1121 (0.590)</td><td align="center" class="junction_gene">intergenic&nbsp;(+109/&#8209;238)</td>
+<td align="center" class="junction_gene"><i>hdhA/NDEONHPJ_03910</i></td>
+<td class="junction_gene">7&#8209;alpha&#8209;hydroxysteroid dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_329.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_329.html">?</a></td>
+<td rowspan="1" class="junction_gene">3</td>
+<td align="center" class="junction_gene">=&nbsp;13362</td><td align="center" class="junction_gene">214 (0.170)</td><td rowspan="2" align="center">42 (0.030)</td>
+<td rowspan="2" align="center">34/138</td>
+<td rowspan="2" align="center">NT</td>
+<td rowspan="2" align="center">6.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+840/&#8211;)</td>
+<td align="center" class="junction_gene"><i>NDEONHPJ_03901/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_329.html">?</a></td><td rowspan="1" class="junction_gene">4</td>
+<td align="center" class="junction_gene">5259&nbsp;=</td>
+<td align="center" class="junction_gene">1121 (0.590)</td><td align="center" class="junction_gene">intergenic&nbsp;(+126/&#8209;221)</td>
+<td align="center" class="junction_gene"><i>hdhA/NDEONHPJ_03910</i></td>
+<td class="junction_gene">7&#8209;alpha&#8209;hydroxysteroid dehydrogenase/hypothetical protein</td>
+</tr>
+</table>
+</body></html>
